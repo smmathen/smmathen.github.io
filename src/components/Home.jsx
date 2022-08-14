@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+// import SelfImage from "../assets/selfimage.png";
 
 const Home = () => {
   return (
@@ -28,6 +29,15 @@ const Home = () => {
               <HiArrowNarrowRight className="ml-3" />
             </span>
           </button>
+          {/* <div className="flex flex-wrap justify-center">
+            <div className="w-6/12 sm:w-4/12 px-4">
+              <img
+                className="shadow rounded-full max-w-full h-auto align-middle border-none"
+                src={SelfImage}
+                alt="Myself"
+              />
+            </div>
+          </div> */}
         </div>
       </div>
     </div>
