@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
 // import SelfImage from "../assets/selfimage.png";
 
 const Home = () => {
@@ -23,21 +24,14 @@ const Home = () => {
           explore these possibilities.
         </p>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#cf4f4f] hover:border-[#cf4f4f]">
-            View Work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
-          {/* <div className="flex flex-wrap justify-center">
-            <div className="w-6/12 sm:w-4/12 px-4">
-              <img
-                className="shadow rounded-full max-w-full h-auto align-middle border-none"
-                src={SelfImage}
-                alt="Myself"
-              />
-            </div>
-          </div> */}
+          <Link to="work" smooth={true} duration={500}>
+            <button className="text-white group border-2 px-8 py-3 my-2 flex items-center hover:bg-[#cf4f4f] hover:border-[#cf4f4f]">
+              View Work
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
