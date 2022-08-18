@@ -11,7 +11,7 @@ const Work = () => {
           <p className="text-4xl font-bold inline border-b-4 border-[#cf4f4f]   ">
             Work
           </p>
-          <p className="py-4"> &lt; Check out some of my recent work! \&gt;</p>
+          <p className="py-4"> &lt; Check out some of my recent work! /&gt;</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
