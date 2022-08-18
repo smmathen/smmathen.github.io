@@ -1,8 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
-
-// import SelfImage from "../assets/selfimage.png";
+import { Icon } from "@iconify/react";
 
 const Home = () => {
   return (
@@ -24,6 +23,44 @@ const Home = () => {
           and data science, and I plan on minoring in Statistics to help me
           explore these possibilities.
         </p>
+        <div className="grid grid-cols-3 max-w-[150px] lg:hidden">
+          <a
+            href="https://www.linkedin.com/in/shawn-mathen/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon
+              icon="ion:logo-linkedin"
+              color="#0072b1"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a
+            href="https://github.com/smmathen"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon
+              icon="akar-icons:github-fill"
+              color="#FFFFFF"
+              width="40"
+              height="40"
+            />
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1PZ988tkTecSZ4yGP2pxlq88nSY54zKe_/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Icon
+              icon="carbon:document"
+              color="#FFFFFF"
+              width="40"
+              height="40"
+            />
+          </a>
+        </div>
         <div>
           <Link to="work" smooth={true} duration={500}>
             <button className="text-white group border-2 px-8 py-3 my-2 flex items-center hover:bg-[#cf4f4f] hover:border-[#cf4f4f]">
