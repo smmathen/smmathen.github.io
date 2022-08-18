@@ -72,7 +72,7 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full pb-6">
           <img src={SelfImage} alt="Me" height="250" width="250"></img>
         </div>
       </div>
