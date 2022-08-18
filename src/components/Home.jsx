@@ -6,7 +6,7 @@ import SelfImage from "../assets/selfimage.png";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f] pt-20">
+    <div name="home" className="w-full h-screen bg-[#0a192f] pt-64">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-[#cf4f4f]">Hi, my name is</p>
