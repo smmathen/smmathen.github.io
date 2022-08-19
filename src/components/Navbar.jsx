@@ -12,7 +12,12 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-8 bg-[#0a192f] text-gray-300">
       <div>
-        <img src={Logo} alt="Logo" style={{ width: "200px" }} />
+        <img
+          className="transform transition-all hover:scale-125"
+          src={Logo}
+          alt="Logo"
+          style={{ width: "200px" }}
+        />
       </div>
       {/*Menu*/}
       {/* hide list on default, anything above medium screen turns into flex */}
