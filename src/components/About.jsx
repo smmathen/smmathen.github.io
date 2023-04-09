@@ -25,9 +25,9 @@ const About = () => {
               creating meaningful software. I like to spend my free time
               learning new coding techniques, particiapting in hackathons, and
               creating my own small projects. However, outside of coding, you
-              can catch me playing tennis or acing my friends in Spikeball! If
+              can catch me playing volleyball or acing my friends in Spikeball! If
               I'm not playing sports, I'm watching Jonathan Taylor be the best
-              running back in NFL history or supporting the Fightin' Texas
+              running back in NFL history, Tyrese Haliburton tear up NBA defenses, or supporting the Fightin' Texas
               Aggies!
             </p>
           </div>

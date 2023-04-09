@@ -3,8 +3,8 @@ import Python from "../assets/python.png";
 import CPP from "../assets/cpp.png";
 import Java from "../assets/java.png";
 import Postman from "../assets/postman.png";
-import Elasticsearch from "../assets/elasticsearch.svg";
 import Figma from "../assets/figma.svg";
+import ReactImg from "../assets/react.webp";
 
 const Skills = () => {
   return (
@@ -43,10 +43,10 @@ const Skills = () => {
           <div className="shadow-md shadow-[#040C16] hover:scale-110 duration-500">
             <img
               className="w-20 mx-auto"
-              src={Elasticsearch}
-              alt="Elasticsearch icon"
+              src={ReactImg}
+              alt="React icon"
             />
-            <p className="my-4">Elasticsearch</p>
+            <p className="my-4">React</p>
           </div>
         </div>
       </div>

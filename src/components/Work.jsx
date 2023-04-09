@@ -21,19 +21,21 @@ const Work = () => {
           >
             {/*Hover Effects*/}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-center text-2xl font-bold text-white tracking-wider">
-                Summer Internship/Fall Co-Op 2022
-              </span>
-              <div className="pt-8 text-center">
-                <a
-                  href="https://www.ibm.com/security"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                    Department Website
-                  </button>
-                </a>
+              <div className="p-4 text-center">
+                <span className="text-2xl font-bold text-white tracking-wider">
+                  Summer Internship/Fall Co-Op 2022
+                </span>
+                <div className="pt-8">
+                  <a
+                    href="https://www.ibm.com/security"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
+                      Department Website
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -43,28 +45,30 @@ const Work = () => {
           >
             {/*Hover Effects*/}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-center text-2xl font-bold text-white tracking-wider">
-                Hackathon Submission for HowdyHack 2022
-              </span>
-              <div className="pt-8 text-center">
-                <a
-                  href="https://devpost.com/software/secret-superstar-gsm9wj"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                    Devpost
-                  </button>
-                </a>
-                <a
-                  href="https://github.com/smmathen/secret-superstar"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                    Code
-                  </button>
-                </a>
+              <div className="flex flex-col justify-center h-full">
+                <span className="text-center text-2xl font-bold text-white tracking-wider">
+                  Hackathon Submission for HowdyHack 2022
+                </span>
+                <div className="pt-4 pb-2 text-center">
+                  <a
+                    href="https://devpost.com/software/secret-superstar-gsm9wj"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
+                      Devpost
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/smmathen/secret-superstar"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
+                      Code
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -74,29 +78,30 @@ const Work = () => {
           >
             {/*Hover Effects*/}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-center text-2xl font-bold text-white tracking-wider">
-                Hackathon Submission for TAMUHack 2021 // Nominated Honorable
-                Mention
-              </span>
-              <div className="pt-8 text-center">
-                <a
-                  href="https://devpost.com/software/aerocheck"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                    Devpost
-                  </button>
-                </a>
-                <a
-                  href="https://github.com/smmathen/TAMUHack_2021"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                    Code
-                  </button>
-                </a>
+              <div className="flex flex-col justify-center h-full">
+                <span className="text-center text-2xl font-bold text-white tracking-wider">
+                  Hackathon Submission for TAMUHack 2021 // Nominated Honorable Mention
+                </span>
+                <div className="pt-4 pb-2 text-center">
+                  <a
+                    href="https://devpost.com/software/aerocheck"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
+                      Devpost
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/smmathen/TAMUHack_2021"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
+                      Code
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
