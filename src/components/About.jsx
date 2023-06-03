@@ -1,4 +1,5 @@
 import React from "react";
+import Avatar from "../assets/avatar.png";
 
 const About = () => {
   return (
@@ -18,6 +19,9 @@ const About = () => {
               Howdy, my name is Shawn. Welcome to my page! Feel free to look
               around!
             </p>
+            <div className="pl-">
+              <img src={Avatar} alt="Apple's Avatar of me" style={{ width: "120px", height: "120px" }} />
+            </div>
           </div>
           <div>
             <p>
@@ -27,7 +31,7 @@ const About = () => {
               creating my own small projects. However, outside of coding, you
               can catch me playing volleyball or acing my friends in Spikeball! If
               I'm not playing sports, I'm watching Jonathan Taylor be the best
-              running back in NFL history, Tyrese Haliburton tear up NBA defenses, or supporting the Fightin' Texas
+              running back in NFL history, Tyrese Haliburton tear up NBA defenses, or cheering on the Fightin' Texas
               Aggies!
             </p>
           </div>

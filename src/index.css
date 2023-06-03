@@ -8,6 +8,7 @@
   body {
     @apply font-[Montserrat];
   }
+
   li {
     @apply px-4;
     @apply cursor-pointer;
@@ -22,9 +23,7 @@
 }
 
 .content-div:hover {
-  background-image: linear-gradient(
-    to right,
-    #cf4f4f,
-    hsla(242, 74%, 61%, 0.8)
-  ) !important;
+  background-image: linear-gradient(to right,
+      #b06363,
+      #cf4f4f) !important;
 }

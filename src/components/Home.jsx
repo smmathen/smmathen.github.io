@@ -10,18 +10,19 @@ const Home = () => {
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-[#cf4f4f]">Hi, my name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-white">
-          <Typed strings={["Shawn Mathen"]} typeSpeed={150} />
+          <Typed strings={["Shawn Mathen :)"]} typeSpeed={150} />
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
           I am a software developer
         </h2>
 
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Howdy everyone! I am current a junior computer science student at Texas A&M University seeking out
-          the world of software development. Currently, I am an incoming Software Engineering Intern at USAA. I
+          Howdy everyone! I am currently a junior computer science student at Texas A&M University navigating
+          the world of software development. Right now, I am a Software Engineering Intern at USAA for the Summer of 2023. Outside of this, I
           have a strong interest in machine learning, artificial intelligence,
-          and data science, and I am minoring in Statistics to help me
-          explore these different fields. I am also an active member of the Society of Asian Scientists and Engineers and also Epic at TAMU!
+          and data science, so I am minoring in Statistics to help me
+          explore these different fields. However, I am always looking to learn new technologies to develop new things!
+          I am also an active member of the Society of Asian Scientists and Engineers and also Epic at TAMU!
         </p>
         <div className="grid grid-cols-3 max-w-[150px] lg:hidden">
           <a

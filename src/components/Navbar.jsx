@@ -104,7 +104,7 @@ const Navbar = () => {
           <ul>
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0072b1]">
               <a
-                className="flex justify-between items-center w-full text-gray-300"
+                className="flex justify-between items-center w-full hover:text-white"
                 href="https://www.linkedin.com/in/shawn-mathen/"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -114,7 +114,7 @@ const Navbar = () => {
             </li>
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#171515]">
               <a
-                className="flex justify-between items-center w-full text-gray-300"
+                className="flex justify-between items-center w-full hover:text-white"
                 href="https://github.com/smmathen"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -124,9 +124,9 @@ const Navbar = () => {
             </li>
 
             <Link to="contact" smooth={true} duration={500}>
-              <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#4997d0]">
+              <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#4997d0] hover:text-white">
                 <a
-                  className="flex justify-between items-center w-full text-gray-300"
+                  className="flex justify-between items-center w-full hover:text-white"
                   href="/"
                 >
                   Email <HiOutlineMail size={30} />
@@ -135,7 +135,7 @@ const Navbar = () => {
             </Link>
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#500000]">
               <a
-                className="flex justify-between items-center w-full text-gray-300"
+                className="flex justify-between items-center w-full hover:text-white"
                 href="https://drive.google.com/file/d/1sksVwW4aL0-gstKCEdneeBwUFWK-ZElQ/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer noopener"
