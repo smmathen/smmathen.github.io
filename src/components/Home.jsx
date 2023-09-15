@@ -17,9 +17,9 @@ const Home = () => {
         </h2>
 
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Howdy everyone! I am currently a junior computer science student at Texas A&M University navigating
-          the world of software development. Right now, I am a Software Engineering Intern at USAA for the Summer of 2023. Outside of this, I
-          have a strong interest in machine learning, artificial intelligence,
+          Howdy everyone! I am currently a senior computer science student at Texas A&M University (Whoop!) navigating
+          the world of software development. This past summer, I was a Software Engineering Intern at USAA, and I have previously intered at IBM as well.
+          Outside of this, I have a strong interest in machine learning, artificial intelligence,
           and data science, so I am minoring in Statistics to help me
           explore these different fields. However, I am always looking to learn new technologies to develop new things!
           I am also an active member of the Society of Asian Scientists and Engineers and also Epic at TAMU!
@@ -50,6 +50,7 @@ const Home = () => {
             />
           </a>
           <a
+            // TODO: Update resume link to current resume (make it online-friendly)
             href="https://drive.google.com/file/d/1PZ988tkTecSZ4yGP2pxlq88nSY54zKe_/view?usp=sharing"
             target="_blank"
             rel="noreferrer noopener"
