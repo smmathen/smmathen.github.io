@@ -12,12 +12,12 @@ const Home = () => {
         <h1 className="text-4xl sm:text-7xl font-bold text-white">
           <Typed strings={["Shawn Mathen :)"]} typeSpeed={150} />
         </h1>
-        <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
+        <h2 className="text-4xl sm:text-7xl font-bold text-[#6382d1]">
           I am a software developer
         </h2>
 
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Howdy everyone! I am currently a senior computer science student at Texas A&M University (Whoop!) navigating
+          Howdy everyone! I am currently a senior computer science student at Texas A&M University (A-Whoop!) navigating
           the world of software development. This past summer, I was a Software Engineering Intern at USAA, and I have previously intered at IBM as well.
           Outside of this, I have a strong interest in machine learning, artificial intelligence,
           and data science, so I am minoring in Statistics to help me
