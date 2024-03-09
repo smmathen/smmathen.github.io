@@ -33,6 +33,7 @@ const Contact = () => {
           className="my-4 p-2 bg-[#CCD6F6] placeholder-[#0a192f]"
           type="email"
           placeholder="email@domain.com"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           name="email"
           required
         />
