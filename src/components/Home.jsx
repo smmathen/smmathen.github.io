@@ -2,7 +2,9 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import { Icon } from "@iconify/react";
-import Typed from "react-typed";
+// import Typed from "react-typed";
+import { TypeAnimation } from 'react-type-animation';
+
 const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-[#0a192f]">
@@ -10,19 +12,26 @@ const Home = () => {
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-[#cf4f4f]">Hi, my name is</p>
         <h1 className="text-4xl sm:text-7xl font-bold text-white">
-          <Typed strings={["Shawn Mathen :)"]} typeSpeed={150} />
+          Shawn Mathen
+          {/* <Typed strings={["Shawn Mathen :)"]} typeSpeed={150} /> */}
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#6382d1]">
-          I am a software developer
+          <TypeAnimation
+            sequence={[
+              'I am a software engineer!',
+              3000,
+              'I am a pickleballer!',
+              3000,
+              'I am an Aggie!',
+              3000
+            ]}
+            speed={30}
+            repeat={Infinity}
+          />
         </h2>
-
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          Howdy everyone! I am currently a senior computer science student at Texas A&M University (A-Whoop!) navigating
-          the world of software development. This past summer, I was a Software Engineering Intern at USAA, and I have previously intered at IBM as well.
-          Outside of this, I have a strong interest in machine learning, artificial intelligence,
-          and data science, so I am minoring in Statistics to help me
-          explore these different fields. However, I am always looking to learn new technologies to develop new things!
-          I am also an active member of the Society of Asian Scientists and Engineers and also Epic at TAMU!
+          Howdy folks! I am a software developer at JPMorganChase. I graduated from Texas A&M University in 2024 with a degree in computer science. I've previously worked
+          at USAA and IBM. I have interests in applying machine learning and artificial intelligence to solve real-world problems.
         </p>
         <div className="grid grid-cols-3 max-w-[150px] lg:hidden">
           <a
