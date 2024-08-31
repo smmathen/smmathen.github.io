@@ -5,6 +5,7 @@ import SecretSuperstar from "../assets/secretsuperstar.jpg";
 import AeroCheck from "../assets/aerocheck.jpg";
 import ReelDeal from "../assets/reeldeal.png"
 import JPMC from "../assets/jpmc.png"
+import WorkCard from "./WorkCard";
 
 const Work = () => {
   return (
@@ -18,177 +19,12 @@ const Work = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div
-            style={{ backgroundImage: `url(${JPMC})` }}
-            className="shadow-lg shadow-color-[#040C16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects*/}
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="p-4 text-center">
-                <span className="text-xl font-bold text-white tracking-wider">
-                  Software Engineer I
-                </span>
-                <div className="pt-8">
-                  <a
-                    href="https://www.usaajobs.com/about-usaa"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                      Department Website
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${USAA})` }}
-            className="shadow-lg shadow-color-[#040C16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects*/}
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="p-4 text-center">
-                <span className="text-xl font-bold text-white tracking-wider">
-                  Summer Internship 2023
-                </span>
-                <div className="pt-8">
-                  <a
-                    href="https://www.usaajobs.com/about-usaa"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                      Department Website
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${IBM})` }}
-            className="shadow-lg shadow-color-[#040C16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects*/}
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="p-4 text-center">
-                <span className="text-xl font-bold text-white tracking-wider">
-                  Summer Internship/Fall Co-Op 2022
-                </span>
-                <div className="pt-8">
-                  <a
-                    href="https://www.ibm.com/security"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                      Department Website
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${ReelDeal})` }}
-            className="shadow-lg shadow-color-[#040C16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects*/}
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="p-4 text-center">
-                <span className="text-xl font-bold text-white tracking-wider">
-                  ReelDeal
-                </span>
-                <div className="pt-4 pb-2 text-center">
-                  <a
-                    href="https://reel-deal.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                      Site
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/smmathen/reel-deal"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                      Code
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${SecretSuperstar})` }}
-            className="shadow-lg shadow-color-[#040C16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects*/}
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="flex flex-col justify-center h-full">
-                <span className="text-center text-xl font-bold text-white tracking-wider">
-                  Hackathon Submission for HowdyHack 2022
-                </span>
-                <div className="pt-4 pb-2 text-center">
-                  <a
-                    href="https://devpost.com/software/secret-superstar-gsm9wj"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                      Devpost
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/smmathen/secret-superstar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                      Code
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${AeroCheck})` }}
-            className="shadow-lg shadow-color-[#040C16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/*Hover Effects*/}
-            <div className="opacity-0 group-hover:opacity-100">
-              <div className="flex flex-col justify-center h-full">
-                <span className="text-center text-xl font-bold text-white tracking-wider">
-                  Hackathon Submission for TAMUHack 2021 // Nominated Honorable Mention
-                </span>
-                <div className="pt-4 pb-2 text-center">
-                  <a
-                    href="https://devpost.com/software/aerocheck"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                      Devpost
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/smmathen/TAMUHack_2021"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <button className="text-center rounded-lg px-8 py-3 m-2 bg-[#0a192f] text-white font-bold text-lg">
-                      Code
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <WorkCard backgroundImage={JPMC} description="Software Engineer I" links={[{ url: "https://www.jpmorganchase.com/", text: "Company Website" }]} />
+          <WorkCard backgroundImage={USAA} description="Summer Internship 2023" links={[{ url: "https://www.usaa.com/", text: "Company Website" }]} />
+          <WorkCard backgroundImage={IBM} description="Summer Internship 2022" links={[{ url: "https://www.ibm.com/", text: "Company Website" }]} />
+          <WorkCard backgroundImage={ReelDeal} description="ReelDeal" links={[{ url: "https://reel-deal.vercel.app", text: "Site" }, { url: "https://github.com/smmathen/reel-deal", text: "Code" }]} />
+          <WorkCard backgroundImage={SecretSuperstar} description="Hackathon Submission for HowdyHack 2022" links={[{ url: "https://devpost.com/software/secret-superstar-gsm9wj", text: "Devpost" }, { url: "https://github.com/smmathen/secret-superstar", text: "Code" }]} />
+          <WorkCard backgroundImage={AeroCheck} description="Hackathon Submission for TAMUHack 2021 // Nominated Honorable Mention" links={[{ url: "https://devpost.com/software/aerocheck", text: "Devpost" }, { url: "https://github.com/smmathen/TAMUHack_2021", text: "Code" }]} />
         </div>
       </div>
     </div>
