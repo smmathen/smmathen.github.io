@@ -25,10 +25,11 @@ const About = () => {
               creating meaningful software. I like to spend my free time
               learning new coding techniques, particiapting in hackathons, and
               creating my own small projects. However, outside of coding, you
-              can catch me playing volleyball or acing my friends in Spikeball! If
+              can catch me playing volleyball or dinking with my friends in Pickleball! If
               I'm not playing sports, I'm watching Jonathan Taylor be the best
               running back in NFL history, Tyrese Haliburton tear up NBA defenses, or supporting the Fightin' Texas
-              Aggies!
+              Aggies! Also, I am always taking new book recommendations so feel free
+              to let me know if you have any good ones!
             </p>
           </div>
         </div>

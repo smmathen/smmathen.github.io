@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaGoodreads, FaGoodreadsG } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
@@ -120,6 +120,17 @@ const Navbar = () => {
                 rel="noreferrer noopener"
               >
                 GitHub <FaGithub size={30} />
+              </a>
+            </li>
+
+            <li className="w-[180px] h-[60px] flex justify-between items-center ml-[-120px] hover:ml-[-10px] duration-300 bg-[#75420e]">
+              <a
+                className="flex justify-between items-center w-full hover:text-white"
+                href="https://www.goodreads.com/user/show/173531074-shawn-mathen"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Goodreads <FaGoodreadsG size={30} />
               </a>
             </li>
 
