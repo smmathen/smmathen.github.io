@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0626d6e1.css",
-    "main.js": "/static/js/main.a60e57cf.js",
+    "main.js": "/static/js/main.85a3f06b.js",
     "static/media/jpmc.png": "/static/media/jpmc.c903f0382bc86b63ae55.png",
     "static/media/reeldeal.png": "/static/media/reeldeal.d068716317820ec05f6c.png",
     "static/media/cpp.png": "/static/media/cpp.e3840907d97777f7601f.png",
@@ -15,10 +15,10 @@
     "static/media/secretsuperstar.jpg": "/static/media/secretsuperstar.4811f3163a220cbc70cb.jpg",
     "index.html": "/index.html",
     "main.0626d6e1.css.map": "/static/css/main.0626d6e1.css.map",
-    "main.a60e57cf.js.map": "/static/js/main.a60e57cf.js.map"
+    "main.85a3f06b.js.map": "/static/js/main.85a3f06b.js.map"
   },
   "entrypoints": [
     "static/css/main.0626d6e1.css",
-    "static/js/main.a60e57cf.js"
+    "static/js/main.85a3f06b.js"
   ]
 }
