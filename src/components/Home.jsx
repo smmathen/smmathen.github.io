@@ -2,7 +2,6 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import { Icon } from "@iconify/react";
-// import Typed from "react-typed";
 import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
