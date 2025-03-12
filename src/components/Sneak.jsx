@@ -12,7 +12,7 @@ const Sneak = () => {
             fontSize: "1.5rem",
             fontFamily: "Arial, sans-serif"
         }}>
-            <div>
+            <div style={{ maxWidth: "80%", margin: "0 auto" }}>
                 <h1>500 - Internal Server Error</h1>
                 <p><TypeAnimation
                     sequence={[
