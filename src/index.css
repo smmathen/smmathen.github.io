@@ -2,11 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 @layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
   body {
-    @apply font-[Montserrat];
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    letter-spacing: -0.01em;
+    line-height: 1.6;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
   }
 
   li {
