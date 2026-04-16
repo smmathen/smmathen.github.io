@@ -4,9 +4,9 @@ import { Link } from "react-scroll";
 import { Icon } from "@iconify/react";
 import { TypeAnimation } from 'react-type-animation';
 
-const Home = () => {
+const Home = ({ onOpenTennis }) => {
   return (
-    <div name="home" className="w-full h-screen bg-[#0a192f]">
+    <div name="home" className="w-full h-screen bg-[#0a192f] relative">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-[#cf4f4f]">Hi, my name is</p>
@@ -82,6 +82,17 @@ const Home = () => {
           </Link>
         </div>
       </div>
+
+      {/* Discreet easter-egg trigger */}
+      <button
+        type="button"
+        onClick={onOpenTennis}
+        aria-label="Open Tennis Pong"
+        title="Tennis Pong"
+        className="absolute bottom-6 right-6 opacity-40 hover:opacity-90 transition-opacity"
+      >
+        <Icon icon="mdi:tennis-ball" color="#d9ff3f" width="22" height="22" />
+      </button>
     </div>
   );
 };

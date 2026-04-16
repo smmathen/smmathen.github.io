@@ -18,7 +18,7 @@ const Navbar = () => {
           }
         `}
       </style>
-      <div className="fixed w-full h-[80px] flex justify-between items-center px-8 bg-[#0a192f] text-gray-300">
+      <div className="fixed z-50 w-full h-[80px] flex justify-between items-center px-8 bg-[#0a192f] text-gray-300">
         <div>
           <Link to="home" smooth={true} duration={500}>
             <img
@@ -60,9 +60,11 @@ const Navbar = () => {
         </ul>
 
         {/*Hamburger*/}
-        <div onClick={handleClick} className="md:hidden z-10">
+        <div className="md:hidden flex items-center gap-3 z-10">
           {/* if we click on hamburger, it switches to the opposite (either into the X or the hamburger) */}
-          {!nav ? <FaBars /> : <FaTimes />}
+          <button type="button" onClick={handleClick} aria-label="Toggle menu">
+            {!nav ? <FaBars /> : <FaTimes />}
+          </button>
         </div>
         {/*Mobile Menu*/}
         <ul
