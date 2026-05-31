@@ -37,7 +37,7 @@ export default function TennisPongModal({ isOpen, onClose }) {
             onClick={() => setMode("single")}
             className={
               mode === "single"
-                ? "px-3 py-1.5 rounded-full bg-[#cf4f4f] text-white"
+                ? "px-3 py-1.5 rounded-full bg-broadcast-crimson text-broadcast-white"
                 : "px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/15 transition-colors"
             }
           >
@@ -48,7 +48,7 @@ export default function TennisPongModal({ isOpen, onClose }) {
             onClick={() => setMode("two")}
             className={
               mode === "two"
-                ? "px-3 py-1.5 rounded-full bg-[#cf4f4f] text-white"
+                ? "px-3 py-1.5 rounded-full bg-broadcast-crimson text-broadcast-white"
                 : "px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/15 transition-colors"
             }
           >

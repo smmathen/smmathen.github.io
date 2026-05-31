@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
-    color-scheme: light dark;
+    color-scheme: dark;
   }
 
   body {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-      "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    @apply bg-broadcast-bg text-broadcast-slate font-body;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -28,8 +26,60 @@
   }
 
   li {
-    @apply px-4;
-    @apply cursor-pointer;
+    @apply px-4 cursor-pointer;
+  }
+}
+
+@layer components {
+  .card-broadcast {
+    @apply bg-broadcast-card border border-white/5 rounded-lg transition-all duration-300;
+  }
+
+  .card-broadcast:hover {
+    @apply -translate-y-1 border-white/15 shadow-card-hover;
+  }
+
+  .glow-left {
+    background: radial-gradient(
+      ellipse at left center,
+      rgba(80, 0, 0, 0.35) 0%,
+      transparent 70%
+    );
+  }
+
+  .glow-right {
+    background: radial-gradient(
+      ellipse at right center,
+      rgba(0, 70, 140, 0.35) 0%,
+      transparent 70%
+    );
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .text-prose {
+    @apply text-[15px] md:text-base leading-[1.7] text-broadcast-body;
+  }
+
+  .ticker-track {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 40s linear infinite;
+  }
+
+  .ticker-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
@@ -41,7 +91,9 @@
 }
 
 .content-div:hover {
-  background-image: linear-gradient(to right,
-      #b06363,
-      #cf4f4f) !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(232, 25, 44, 0.85),
+    rgba(232, 25, 44, 0.6)
+  ) !important;
 }

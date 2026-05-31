@@ -82,7 +82,7 @@ export default function Modal({ isOpen, titleId, onClose, children }) {
           aria-modal="true"
           aria-labelledby={titleId}
           tabIndex={-1}
-          className="w-full max-w-3xl rounded-xl bg-[#0a192f] text-gray-200 shadow-2xl border border-white/10 outline-none"
+          className="w-full max-w-3xl rounded-xl bg-broadcast-card text-broadcast-slate shadow-2xl border border-white/10 outline-none"
         >
           {children}
         </div>

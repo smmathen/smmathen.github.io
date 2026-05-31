@@ -4,9 +4,9 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-import Contact from "./components/Contact";
-import Sneak from "./components/Sneak"
+import Sneak from "./components/Sneak";
 import TennisPongModal from "./components/TennisPongModal";
+import LiveTicker from "./components/LiveTicker";
 
 function App() {
   const [showSneak, setShowSneak] = useState(false);
@@ -24,15 +24,16 @@ function App() {
     }
   }, []);
 
-
-  return showSneak ? <Sneak /> : (
-    <div>
+  return showSneak ? (
+    <Sneak />
+  ) : (
+    <div className="bg-broadcast-bg text-broadcast-slate min-h-screen">
+      <LiveTicker />
       <Navbar />
       <Home onOpenTennis={() => setIsTennisOpen(true)} />
       <About />
       <Skills />
       <Work />
-      <Contact />
       <TennisPongModal
         isOpen={isTennisOpen}
         onClose={() => setIsTennisOpen(false)}
