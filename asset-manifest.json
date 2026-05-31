@@ -1,24 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b157dd4.css",
-    "main.js": "/static/js/main.eb4452bf.js",
-    "static/media/jpmc.png": "/static/media/jpmc.c903f0382bc86b63ae55.png",
-    "static/media/reeldeal.png": "/static/media/reeldeal.d068716317820ec05f6c.png",
+    "main.css": "/static/css/main.e4440366.css",
+    "main.js": "/static/js/main.cfdcb2b1.js",
     "static/media/cpp.png": "/static/media/cpp.e3840907d97777f7601f.png",
     "static/media/java.png": "/static/media/java.fdabd4e11f1235e4e8e0.png",
-    "static/media/usaa.jpeg": "/static/media/usaa.f30f8cb9f68e1b7b29f2.jpeg",
-    "static/media/ibm.png": "/static/media/ibm.62cfd09a2460fd18d355.png",
     "static/media/aws.png": "/static/media/aws.9ce7bb2d3308633fa653.png",
     "static/media/react.webp": "/static/media/react.fc0396332c9ab25d028a.webp",
     "static/media/aerocheck.jpg": "/static/media/aerocheck.696920cfa9899323761f.jpg",
     "static/media/logo.png": "/static/media/logo.51375b59b87ecd18c3d8.png",
-    "static/media/secretsuperstar.jpg": "/static/media/secretsuperstar.4811f3163a220cbc70cb.jpg",
     "index.html": "/index.html",
-    "main.1b157dd4.css.map": "/static/css/main.1b157dd4.css.map",
-    "main.eb4452bf.js.map": "/static/js/main.eb4452bf.js.map"
+    "main.e4440366.css.map": "/static/css/main.e4440366.css.map",
+    "main.cfdcb2b1.js.map": "/static/js/main.cfdcb2b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b157dd4.css",
-    "static/js/main.eb4452bf.js"
+    "static/css/main.e4440366.css",
+    "static/js/main.cfdcb2b1.js"
   ]
 }
