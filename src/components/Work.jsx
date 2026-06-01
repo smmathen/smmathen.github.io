@@ -1,13 +1,17 @@
 import React from "react";
 import AeroCheck from "../assets/aerocheck.jpg";
 import WorkCard from "./WorkCard";
+import ProjectCard from "./ProjectCard";
 import SectionHeader from "./SectionHeader";
 import StandingsTable from "./StandingsTable";
 import { careerStandings, projects } from "../data/broadcastData";
 
 const Work = () => {
-  const featured = projects.find((p) => p.featured);
-  const projectRows = projects.map((project, index) => ({
+  const featured = projects.find((p) => p.tier === "featured");
+  const recent = projects.filter((p) => p.tier === "recent");
+  const archive = projects.filter((p) => p.tier === "archive");
+
+  const archiveRows = archive.map((project, index) => ({
     rank: index + 1,
     team: project.title,
     role: project.description,
@@ -27,13 +31,6 @@ const Work = () => {
 
         <StandingsTable rows={careerStandings} />
 
-        <div className="mt-10">
-          <p className="font-headline text-xs uppercase tracking-widest text-broadcast-slate mb-3">
-            Projects
-          </p>
-          <StandingsTable rows={projectRows} />
-        </div>
-
         {featured && (
           <div className="mt-10">
             <WorkCard
@@ -45,6 +42,24 @@ const Work = () => {
             />
           </div>
         )}
+
+        <div className="mt-10">
+          <p className="font-headline text-xs uppercase tracking-widest text-broadcast-slate mb-3">
+            Latest Builds
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {recent.map((project) => (
+              <ProjectCard key={project.title} {...project} />
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <p className="font-headline text-xs uppercase tracking-widest text-broadcast-slate mb-3">
+            Earlier Projects
+          </p>
+          <StandingsTable rows={archiveRows} />
+        </div>
       </div>
     </div>
   );

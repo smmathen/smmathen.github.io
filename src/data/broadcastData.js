@@ -97,19 +97,41 @@ export const projects = [
     title: "AeroCheck",
     description: "Hackathon submission for TAMUHack 2021 · Nominated Honorable Mention",
     season: "2021",
-    featured: true,
-    imgKey: "aerocheck",
+    tier: "featured",
     links: [
       { url: "https://devpost.com/software/aerocheck", text: "Devpost" },
       { url: "https://github.com/smmathen/TAMUHack_2021", text: "Code" },
     ],
   },
   {
+    title: "Paperhands",
+    description:
+      "Local paper trading journal — log buys and sells, track portfolio value, and see if your gut would have made money",
+    season: "2026",
+    tier: "recent",
+    links: [{ url: "https://github.com/smmathen/paperhands", text: "Code" }],
+  },
+  {
+    title: "git-visualizer",
+    description:
+      "Fast browser-based git diff viewer for staged and unstaged changes — served in-memory from a Go CLI",
+    season: "2026",
+    tier: "recent",
+    links: [{ url: "https://github.com/smmathen/git-visualizer", text: "Code" }],
+  },
+  {
+    title: "Fitbit Air Dashboard",
+    description:
+      "React dashboard for personal Fitbit Air data via Google Health API — sleep, workouts, readiness, and insights",
+    season: "2026",
+    tier: "recent",
+    links: [{ url: "https://github.com/smmathen/fitbit-air-dashboard", text: "Code" }],
+  },
+  {
     title: "ReelDeal",
     description: "Full-stack movie discovery app",
     season: "2024",
-    featured: false,
-    imgKey: "reeldeal",
+    tier: "archive",
     links: [
       { url: "https://reel-deal.vercel.app", text: "Site" },
       { url: "https://github.com/smmathen/reel-deal", text: "Code" },
@@ -119,8 +141,7 @@ export const projects = [
     title: "Secret Superstar",
     description: "HowdyHack 2022 submission",
     season: "2022",
-    featured: false,
-    imgKey: "secretsuperstar",
+    tier: "archive",
     links: [
       { url: "https://devpost.com/software/secret-superstar-gsm9wj", text: "Devpost" },
       { url: "https://github.com/smmathen/secret-superstar", text: "Code" },
