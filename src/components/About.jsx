@@ -29,7 +29,7 @@ const About = () => {
             <StoryCard
               tag="VIDEO"
               title="Off the clock: Sports & books"
-              excerpt="Outside of coding, you can catch me playing volleyball or pickleball. If I'm not playing, I'm watching Jonathan Taylor, Tyrese Haliburton, or the Fightin' Texas Aggies — always open to book recommendations too!"
+              excerpt="However, outside of coding, you can catch me playing volleyball or dinking with my friends in Pickleball! If I'm not playing sports, I'm watching Jonathan Taylor be the best running back in NFL history, Tyrese Haliburton tear up NBA defenses, or supporting the Fightin' Texas Aggies! Also, I am always taking new book recommendations so feel free to let me know if you have any good ones!"
             />
           </div>
         </div>
