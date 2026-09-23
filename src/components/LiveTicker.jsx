@@ -10,9 +10,9 @@ const TickerItem = ({ item }) => {
   return (
     <span className="inline-flex items-center gap-3 px-6 whitespace-nowrap">
       <span
-        className={`font-mono tabular-nums font-bold ${
+        className={`tabular-nums font-bold ${
           awayWon && indianaTeams.has(item.away)
-            ? "text-broadcast-amber"
+            ? "text-broadcast-crimson"
             : "text-broadcast-white"
         }`}
       >
@@ -20,17 +20,15 @@ const TickerItem = ({ item }) => {
       </span>
       <span className="text-broadcast-slate">–</span>
       <span
-        className={`font-mono tabular-nums font-bold ${
+        className={`tabular-nums font-bold ${
           homeWon && indianaTeams.has(item.home)
-            ? "text-broadcast-amber"
+            ? "text-broadcast-crimson"
             : "text-broadcast-white"
         }`}
       >
         {item.homeScore} {item.home}
       </span>
-      <span className="text-broadcast-slate text-sm font-headline uppercase tracking-wide">
-        {item.period}
-      </span>
+      <span className="swiss-label">{item.period}</span>
     </span>
   );
 };
@@ -39,9 +37,9 @@ const LiveTicker = () => {
   const items = [...tickerItems, ...tickerItems];
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] h-9 bg-broadcast-card border-b border-white/5 overflow-hidden flex items-center">
-      <div className="flex-shrink-0 px-4 h-full flex items-center bg-broadcast-crimson/10 border-r border-white/5">
-        <span className="text-xs font-headline font-bold uppercase tracking-widest text-broadcast-crimson">
+    <div className="fixed top-0 left-0 right-0 z-[60] h-9 bg-broadcast-bg border-b border-broadcast-white/20 overflow-hidden flex items-center">
+      <div className="flex-shrink-0 px-4 h-full flex items-center border-r border-broadcast-white/20">
+        <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-broadcast-crimson">
           Scores
         </span>
       </div>

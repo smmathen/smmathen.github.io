@@ -72,7 +72,7 @@ export default function Modal({ isOpen, titleId, onClose, children }) {
       <button
         type="button"
         aria-label="Close modal"
-        className="absolute inset-0 w-full h-full bg-black/70 cursor-default"
+        className="absolute inset-0 w-full h-full bg-black/80 cursor-default"
         onClick={onClose}
       />
       <div className="relative z-10 w-full h-full flex items-center justify-center p-4">
@@ -82,7 +82,7 @@ export default function Modal({ isOpen, titleId, onClose, children }) {
           aria-modal="true"
           aria-labelledby={titleId}
           tabIndex={-1}
-          className="w-full max-w-3xl rounded-xl bg-broadcast-card text-broadcast-slate shadow-2xl border border-white/10 outline-none"
+          className="w-full max-w-3xl bg-broadcast-bg text-broadcast-slate border border-broadcast-white/20 outline-none"
         >
           {children}
         </div>

@@ -4,15 +4,15 @@ import StoryCard from "./StoryCard";
 
 const About = () => {
   return (
-    <div name="about" className="w-full min-h-screen bg-broadcast-bg text-broadcast-slate py-20">
-      <div className="max-w-[1000px] mx-auto px-8">
+    <div name="about" className="w-full text-broadcast-slate py-16 md:py-20">
+      <div className="max-w-[1000px] mx-auto px-6 md:px-8">
         <SectionHeader
           title="Top Stories"
           tag="FEATURED"
           subtitle="The latest from the developer desk."
         />
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
           <StoryCard
             featured
             tag="FEATURED"
@@ -20,7 +20,7 @@ const About = () => {
             excerpt="Feel free to look around! Over the past few years, I have developed a strong interest in creating meaningful software. I like to spend my free time learning new coding techniques, participating in hackathons, and creating my own small projects."
           />
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-4">
             <StoryCard
               tag="ANALYSIS"
               title="Why I love building software"
@@ -29,7 +29,7 @@ const About = () => {
             <StoryCard
               tag="VIDEO"
               title="Off the clock: Sports & books"
-              excerpt="However, outside of coding, you can catch me playing volleyball or dinking with my friends in Pickleball! If I'm not playing sports, I'm watching Jonathan Taylor be the best running back in NFL history, Tyrese Haliburton tear up NBA defenses, or supporting the Fightin' Texas Aggies! Also, I am always taking new book recommendations so feel free to let me know if you have any good ones!"
+              excerpt="Outside of coding, you can catch me playing volleyball or pickleball. If I'm not playing, I'm watching Jonathan Taylor, Tyrese Haliburton, or the Fightin' Texas Aggies — always open to book recommendations too!"
             />
           </div>
         </div>

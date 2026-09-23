@@ -21,8 +21,8 @@ const Work = () => {
   }));
 
   return (
-    <div name="work" className="w-full min-h-screen bg-broadcast-bg text-broadcast-slate py-20">
-      <div className="max-w-[1000px] mx-auto px-8">
+    <div name="work" className="w-full text-broadcast-slate py-16 md:py-20">
+      <div className="max-w-[1000px] mx-auto px-6 md:px-8">
         <SectionHeader
           title="Career Standings"
           tag="LEAGUE"
@@ -32,7 +32,7 @@ const Work = () => {
         <StandingsTable rows={careerStandings} />
 
         {featured && (
-          <div className="mt-10">
+          <div className="mt-8">
             <WorkCard
               featured
               backgroundImage={AeroCheck}
@@ -43,10 +43,8 @@ const Work = () => {
           </div>
         )}
 
-        <div className="mt-10">
-          <p className="font-headline text-xs uppercase tracking-widest text-broadcast-slate mb-3">
-            Latest Builds
-          </p>
+        <div className="mt-8">
+          <p className="swiss-label mb-3">Latest Builds</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {recent.map((project) => (
               <ProjectCard key={project.title} {...project} />
@@ -54,10 +52,8 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="mt-10">
-          <p className="font-headline text-xs uppercase tracking-widest text-broadcast-slate mb-3">
-            Earlier Projects
-          </p>
+        <div className="mt-8">
+          <p className="swiss-label mb-3">Earlier Projects</p>
           <StandingsTable rows={archiveRows} />
         </div>
       </div>

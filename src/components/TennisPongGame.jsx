@@ -322,12 +322,12 @@ export default function TennisPongGame({ mode, isOpen }) {
         height={size.h}
         className="block w-full h-auto"
       />
-      <div className="px-3 py-2 text-xs text-gray-400 flex flex-wrap gap-x-4 gap-y-1 bg-black/20 border-t border-white/10">
+      <div className="px-3 py-2 text-xs text-broadcast-slate flex flex-wrap gap-x-4 gap-y-1 border-t border-broadcast-white/20">
         <span>
-          <span className="text-gray-300">Single:</span> you (left) vs AI (right)
+          <span className="text-broadcast-body">Single:</span> you (left) vs AI (right)
         </span>
         <span>
-          <span className="text-gray-300">Two-player:</span> W/S and ↑/↓
+          <span className="text-broadcast-body">Two-player:</span> W/S and ↑/↓
         </span>
       </div>
     </div>

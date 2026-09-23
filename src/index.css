@@ -9,13 +9,16 @@
 
   body {
     @apply bg-broadcast-bg text-broadcast-slate font-body;
+    background-image:
+      radial-gradient(ellipse 70% 45% at 0% 0%, rgba(196, 106, 74, 0.08), transparent 55%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(184, 149, 106, 0.07), transparent 50%);
+    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-kerning: normal;
-    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
-    letter-spacing: -0.01em;
-    line-height: 1.6;
+    letter-spacing: 0;
+    line-height: 1.5;
   }
 
   button,
@@ -32,27 +35,33 @@
 
 @layer components {
   .card-broadcast {
-    @apply bg-broadcast-card border border-white/5 rounded-lg transition-all duration-300;
+    @apply bg-broadcast-card/40 border border-broadcast-white/15 transition-colors duration-150;
   }
 
   .card-broadcast:hover {
-    @apply -translate-y-1 border-white/15 shadow-card-hover;
+    @apply border-broadcast-crimson/70;
   }
 
-  .glow-left {
-    background: radial-gradient(
-      ellipse at left center,
-      rgba(80, 0, 0, 0.35) 0%,
-      transparent 70%
-    );
+  .swiss-label {
+    @apply text-[11px] font-bold uppercase tracking-[0.18em] text-broadcast-slate;
   }
 
-  .glow-right {
-    background: radial-gradient(
-      ellipse at right center,
-      rgba(0, 70, 140, 0.35) 0%,
-      transparent 70%
-    );
+  .swiss-btn {
+    @apply inline-flex items-center justify-center px-6 py-3
+      font-bold uppercase tracking-[0.12em] text-sm
+      border border-broadcast-crimson text-broadcast-white
+      hover:bg-broadcast-crimson transition-colors duration-150;
+  }
+
+  .swiss-chip {
+    @apply inline-block px-2 py-0.5 text-[11px] font-bold uppercase tracking-[0.12em]
+      text-broadcast-crimson border border-broadcast-crimson
+      hover:bg-broadcast-crimson hover:text-broadcast-white transition-colors duration-150;
+  }
+
+  .swiss-tag {
+    @apply inline-block px-2 py-0.5 text-[11px] font-bold uppercase tracking-[0.14em]
+      text-broadcast-crimson border border-broadcast-crimson;
   }
 
   .tabular-nums {
@@ -60,7 +69,7 @@
   }
 
   .text-prose {
-    @apply text-[15px] md:text-base leading-[1.7] text-broadcast-body;
+    @apply text-[15px] md:text-base leading-[1.65] text-broadcast-body max-w-prose;
   }
 
   .ticker-track {
@@ -93,7 +102,7 @@
 .content-div:hover {
   background-image: linear-gradient(
     to right,
-    rgba(232, 25, 44, 0.85),
-    rgba(232, 25, 44, 0.6)
+    rgba(196, 106, 74, 0.9),
+    rgba(196, 106, 74, 0.7)
   ) !important;
 }

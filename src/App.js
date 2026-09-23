@@ -27,7 +27,7 @@ function App() {
   return showSneak ? (
     <Sneak />
   ) : (
-    <div className="bg-broadcast-bg text-broadcast-slate min-h-screen">
+    <div className="text-broadcast-slate min-h-screen">
       <LiveTicker />
       <Navbar />
       <Home onOpenTennis={() => setIsTennisOpen(true)} />

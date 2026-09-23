@@ -20,8 +20,8 @@ const skillImages = {
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full min-h-screen bg-broadcast-bg text-broadcast-slate py-20">
-      <div className="max-w-[1000px] mx-auto px-8">
+    <div name="skills" className="w-full text-broadcast-slate py-16 md:py-20">
+      <div className="max-w-[1000px] mx-auto px-6 md:px-8">
         <SectionHeader
           title="The Roster"
           tag="SEASON"
