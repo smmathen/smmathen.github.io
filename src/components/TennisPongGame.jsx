@@ -281,7 +281,7 @@ export default function TennisPongGame({ mode, isOpen }) {
       const left = score.left;
       const right = score.right;
       ctx.fillStyle = "rgba(255,255,255,0.9)";
-      ctx.font = "600 22px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+      ctx.font = '400 22px "Geist Serif", "Times New Roman", Times, serif';
       ctx.textAlign = "center";
       ctx.fillText(`${left}  :  ${right}`, VIRTUAL_W / 2, 44);
 
@@ -291,7 +291,7 @@ export default function TennisPongGame({ mode, isOpen }) {
         ctx.fillStyle = "rgba(0,0,0,0.45)";
         ctx.fillRect(0, 0, VIRTUAL_W, VIRTUAL_H);
         ctx.fillStyle = "rgba(255,255,255,0.95)";
-        ctx.font = "700 34px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+        ctx.font = '400 34px "Geist Serif", "Times New Roman", Times, serif';
         ctx.textAlign = "center";
         const msg = hasWinner
           ? left > right
@@ -299,7 +299,7 @@ export default function TennisPongGame({ mode, isOpen }) {
             : "Right wins!"
           : "Paused";
         ctx.fillText(msg, VIRTUAL_W / 2, VIRTUAL_H / 2 - 10);
-        ctx.font = "500 16px system-ui, -apple-system, Segoe UI, Roboto, Arial";
+        ctx.font = '400 16px "Geist Serif", "Times New Roman", Times, serif';
         ctx.fillStyle = "rgba(255,255,255,0.85)";
         ctx.fillText("Press Space to resume • Press R to reset", VIRTUAL_W / 2, VIRTUAL_H / 2 + 22);
       }
