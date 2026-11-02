@@ -15,27 +15,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        headline: [
-          '"Helvetica Neue"',
-          "Helvetica",
-          "Arial",
-          "ui-sans-serif",
-          "sans-serif",
-        ],
-        body: [
-          '"Helvetica Neue"',
-          "Helvetica",
-          "Arial",
-          "ui-sans-serif",
-          "sans-serif",
-        ],
-        mono: [
-          '"Helvetica Neue"',
-          "Helvetica",
-          "Arial",
-          "ui-sans-serif",
-          "sans-serif",
-        ],
+        headline: ['"Geist Serif"', '"Times New Roman"', "Times", "serif"],
+        body: ['"Geist Serif"', '"Times New Roman"', "Times", "serif"],
+        mono: ['"Geist Serif"', '"Times New Roman"', "Times", "serif"],
       },
       animation: {
         "pulse-live": "pulse-live 2s ease-in-out infinite",
