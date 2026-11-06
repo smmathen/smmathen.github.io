@@ -8,21 +8,29 @@ import Sneak from "./components/Sneak";
 import TennisPongModal from "./components/TennisPongModal";
 import LiveTicker from "./components/LiveTicker";
 
+function shouldShowSneak() {
+  try {
+    return sessionStorage.getItem("hasSeenSneak") !== "true";
+  } catch {
+    return false;
+  }
+}
+
 function App() {
-  const [showSneak, setShowSneak] = useState(false);
+  const [showSneak, setShowSneak] = useState(shouldShowSneak);
   const [isTennisOpen, setIsTennisOpen] = useState(false);
 
   useEffect(() => {
     document.title = "Shawn Mathen";
-    const hasSeenSneak = sessionStorage.getItem("hasSeenSneak");
-    if (!hasSeenSneak) {
-      setShowSneak(true);
-      setTimeout(() => {
-        sessionStorage.setItem("hasSeenSneak", "true");
-        setShowSneak(false);
-      }, 3000);
-    }
-  }, []);
+    if (!showSneak) return undefined;
+
+    const timeoutId = window.setTimeout(() => {
+      sessionStorage.setItem("hasSeenSneak", "true");
+      setShowSneak(false);
+    }, 3000);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [showSneak]);
 
   return showSneak ? (
     <Sneak />
